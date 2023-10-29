@@ -11,5 +11,6 @@
     @foreach ($articles as $article)
         <p><a href="{{ route('articles.show', $article) }}">{{ $article -> title }}</a></p>
     @endforeach
+    <button onclick='location.href="{{ route("articles.create") }}"'>新規論文投稿</button>
 </body>
 </html>
